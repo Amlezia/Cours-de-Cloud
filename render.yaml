@@ -12,6 +12,6 @@ services:
 
 databases:
   - name: mydb
+    databaseName: mydbName
     region: frankfurt
     plan: free
-    databaseName: mydbName # optional (Render may add a suffix)
