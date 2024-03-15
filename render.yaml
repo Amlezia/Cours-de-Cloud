@@ -1,0 +1,21 @@
+services:
+  # A Docker web service
+  - type: web
+    name: Cours-de-Cloud
+    region: frankfurt  
+    plan: standard
+    rootDir: Cours-de-Cloud
+    runtime: docker
+    numInstances: 3
+    envVars:
+        key: DB_NAME
+        generateValue: true
+        fromDatabase:
+          name: DB_NAME
+          property: connectionString
+    databases:
+    - name: mydb
+      region: frankfurt
+      plan: standard
+      databaseName: mydbName # optional (Render may add a suffix)
+      user: DB_USER # optional
