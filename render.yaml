@@ -13,5 +13,6 @@ services:
 databases:
   - name: mydb
     databaseName: mydbName
+    user: myuser
     region: frankfurt
     plan: free
