@@ -3,7 +3,7 @@ services:
   - type: web
     name: Cours-de-Cloud
     region: frankfurt  
-    plan: standard
+    plan: free
     rootDir: Cours-de-Cloud
     runtime: docker
     numInstances: 3
@@ -16,6 +16,5 @@ services:
     databases:
     - name: mydb
       region: frankfurt
-      plan: standard
+      plan: free
       databaseName: mydbName # optional (Render may add a suffix)
-      user: DB_USER # optional
