@@ -3,7 +3,7 @@ services:
     name: Cours-de-Cloud
     region: frankfurt  
     plan: free
-    runtime: docker
+    runtime: node
     envVars:
       - key: DB_NAME
         fromDatabase:
