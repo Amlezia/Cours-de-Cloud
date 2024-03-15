@@ -6,13 +6,12 @@ services:
     plan: free
     runtime: docker
     envVars:
-        - key: DB_NAME
-        generateValue: true
+      - key: DB_NAME
         fromDatabase:
           name: DB_NAME
           property: connectionString
     databases:
-    - name: mydb
-      region: frankfurt
-      plan: free
-      databaseName: mydbName # optional (Render may add a suffix)
+      - name: mydb
+        region: frankfurt
+        plan: free
+        databaseName: mydbName # optional (Render may add a suffix)
