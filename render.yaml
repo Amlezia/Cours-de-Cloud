@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: Cours-de-Cloud
+    name: myweb
     region: frankfurt  
     plan: free
     runtime: node
@@ -14,7 +14,7 @@ services:
 
 databases:
   - name: mydb
-    databaseName: mydbName
+    databaseName: mydbname
     user: myuser
     region: frankfurt
     plan: free
