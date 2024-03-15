@@ -10,8 +10,8 @@ services:
           name: DB_NAME
           property: connectionString
 
-  databases:
-    - name: mydb
-      region: frankfurt
-      plan: free
-      databaseName: mydbName # optional (Render may add a suffix)
+databases:
+  - name: mydb
+    region: frankfurt
+    plan: free
+    databaseName: mydbName # optional (Render may add a suffix)
