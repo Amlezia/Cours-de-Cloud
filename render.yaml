@@ -4,6 +4,8 @@ services:
     region: frankfurt  
     plan: free
     runtime: node
+    buildCOmmand: npm install
+    StartCommand: npm start
     envVars:
       - key: DB_NAME
         fromDatabase:
