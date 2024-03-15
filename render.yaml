@@ -4,11 +4,9 @@ services:
     name: Cours-de-Cloud
     region: frankfurt  
     plan: free
-    rootDir: Cours-de-Cloud
     runtime: docker
-    numInstances: 3
     envVars:
-        key: DB_NAME
+        - key: DB_NAME
         generateValue: true
         fromDatabase:
           name: DB_NAME
